@@ -58,8 +58,8 @@ h1 span:nth-child(9) { animation-delay: .8s; }
 }
 
 .emoji {
-    font-size: 32px; /* Adjust size of the emoji */
-    position: fixed; /* Position it relative to the viewport */
-    display: none; /* Hide it initially */
-    user-select: none; /* Prevent selection to improve UX */
+    font-size: 32px; 
+    position: fixed;
+    display: none; 
+    user-select: none; 
 }
