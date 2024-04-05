@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>
@@ -24,20 +24,18 @@
         <span>e</span>
     </h1>
     <script>
-        let clickCount = 0; // Initialize click counter
+        let clickCount = 0;
         document.addEventListener('click', function(e) {
             clickCount++;
             const emoji = document.createElement('div');
             emoji.className = 'emoji';
-            emoji.textContent = '🙋‍♀️'; // Your emoji here
+            emoji.textContent = '🙋‍♀️';
             document.body.appendChild(emoji);
 
-            // Position the emoji at the click location
             emoji.style.left = `${e.pageX}px`;
             emoji.style.top = `${e.pageY}px`;
             emoji.style.display = 'block';
 
-            // Redirect on the 30th click
             if (clickCount === 30) {
                 console.log("Redirecting on 30th click.");
                 window.location.href = 'aboutjenny.index.html';
