@@ -78,9 +78,9 @@
                 padding: 5px 0;   
                 position: absolute;  
                 z-index: 1;  
-                bottom: -500%;  
-                left: 50%;  
-                margin-left: 100px;  
+                bottom: -1000%;  
+                left: 200%;  
+                margin-left: 1190px;  
             }  
   
             .tooltip:hover .tooltiptext {  
