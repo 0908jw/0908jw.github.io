@@ -1,0 +1,52 @@
+
+.hidden-text {
+    margin-top: 100px; 
+    margin-left: 20px;
+    font-size: 10px;
+    color: transparent;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.hidden-text:hover {
+    color: black;   
+
+}
+
+.hidden-text1 {
+    margin-top: 200px; 
+    margin-left: 50px;
+    font-size: 10px;
+    color: transparent;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.hidden-text1:hover {
+    color: black;
+}
+
+.hidden-text2 {
+    margin-top: 300px; 
+    margin-left: 40px;
+    font-size: 10px;
+    color: transparent;
+    cursor: pointer;
+    transition: coslor 0.5s ease;
+}
+.hidden-text2:hover {
+    color: black;
+}
+
+.hidden-text3 {
+    margin-top: 250px; 
+    margin-left: 10px;
+    font-size: 10px;
+    color: transparent;
+    cursor: pointer;
+    transition: coslor 0.5s ease;
+}
+.hidden-text3:hover {
+    color: black;
+}
+

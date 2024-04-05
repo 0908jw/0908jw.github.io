@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text and Emoji Interaction</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <h1>
+        <span>J</span>
+        <span>e</span>
+        <span>n</span>
+        <span>n</span>
+        <span>y</span>
+        <span>E</span>
+        <span>v</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+        <span>w</span>
+        <span>h</span>
+        <span>e</span>
+        <span>r</span>
+        <span>e</span>
+    </h1>
+    <script>
+        let clickCount = 0; // Initialize click counter
+        document.addEventListener('click', function(e) {
+            clickCount++;
+            const emoji = document.createElement('div');
+            emoji.className = 'emoji';
+            emoji.textContent = '🙋‍♀️'; // Your emoji here
+            document.body.appendChild(emoji);
+
+            // Position the emoji at the click location
+            emoji.style.left = `${e.pageX}px`;
+            emoji.style.top = `${e.pageY}px`;
+            emoji.style.display = 'block';
+
+            // Redirect on the 30th click
+            if (clickCount === 30) {
+                console.log("Redirecting on 30th click.");
+                window.location.href = 'aboutjenny.index.html';
+            }
+        });
+    </script>
+</body>
+</html>
+
+
