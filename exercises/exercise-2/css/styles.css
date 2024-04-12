@@ -1,0 +1,51 @@
+/*fonts*/
+
+@font-face {
+    font-family: 'Absans';
+    src: url('../fonts/Absans-Regular.woff2');
+}
+
+/* base style */
+body {
+    background-color: mistyrose;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+main {
+    max-width: 100%;
+    
+    background-color: rgb(94, 152, 210);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    padding: 2rem;
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+    font-family: cursive;
+}
+
+h2 {
+    color: rgb(12, 221, 155);
+}
+
+.highlighted {
+    background-color: coral;
+    font-weight: bold;
+}
+
+.navigation a {
+    color: darkmagenta
+}
+
+.navigation a:hover {
+    color: red
+}
+
