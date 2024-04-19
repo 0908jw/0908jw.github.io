@@ -1,0 +1,21 @@
+@font-face {
+    font-family: TablettenschriftLLTrialTT;
+    src: url(TablettenschriftLLTrialTT-AM.ttf);
+}
+  
+title {
+    font-family: TablettenschriftLLTrialTT;
+    color: darkgreen;
+}
+
+#gif-container {
+    position: absolute;
+    display: none;
+}
+
+.hover-trigger:hover + #gif-container {
+    display: block;
+    position: absolute;
+    top: 20px; /* Adjust this value to position the GIF where you want */
+    left: 0;
+}

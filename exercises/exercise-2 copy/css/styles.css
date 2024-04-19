@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Absans';
-    src: url('../fonts/Absans-Regular.woff2') format('woff2')
+    src: url('../fonts/Absans-Regular.woff2');
 }
 
 /* base style */
@@ -13,10 +13,12 @@ body {
     
 }
 
+
 main {
-    max-width: 100%;
-    
-    background-color: rgb(94, 152, 210);
+    max-width: 65%;
+    min-width: 20%;
+    padding: 1rem;
+    margin-left: 30%;
 }
 
 img {
@@ -26,7 +28,23 @@ img {
     border: 2px solid red;
     box-sizing: border-box;
 }
-
+.navigation{
+    box-sizing:border-box;
+    font-family:'Courier New', Courier, monospace;
+    max-width:30%;
+    min-width:10%;
+    padding:1rem;
+    position:fixed;
+    left:2%;
+    color:#73628A;
+ }
+ .navigation-primary{
+    font-size:18px;
+ }
+ .navigation-secondary{
+    font-size:16px;
+ }
+ 
 p {
     font-size: 16px;
     font-family: cursive;
@@ -48,4 +66,5 @@ h2 {
 .navigation a:hover {
     color: red
 }
+  
 
