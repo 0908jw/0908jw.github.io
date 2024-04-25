@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Delayed Image Display</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;     /* Centers the content vertically */
+    height: 100vh;           /* Use the full height of the viewport */
+    margin: 0;               /* Remove default margin */
+  }
+  .hidden {
+    display: none;
+  }
+  #delayedImage {
+    width: 600px;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+  <!-- Image initially hidden with the "hidden" class -->
+  <img id="delayedImage" src="crave.png" alt="Delayed Image" class="hidden" >
+
+  <script>
+    // Function to show the image after a delay
+    function showImage() {
+      const image = document.getElementById('delayedImage');
+      image.classList.remove('hidden');  // Remove the 'hidden' class to display the image
+    }
+
+    // Set a timer to run the showImage function after 5000 milliseconds (5 seconds)
+    setTimeout(showImage, 4000);
+  </script>
+</body>
+</html>
