@@ -47,10 +47,12 @@ function add_image() {
 
 // rewind and play one of the audio elements
 function do_sound() {
-    let rnd_snd = document.getElementById('snd' + parseInt(Math.random() * 7));
-    rnd_snd.currentTime = 0;
-    rnd_snd.play();
+    let audio = document.getElementById('myAudio');
+    audio.play();
 }
+
+// Ensure the audio loops
+document.getElementById('myAudio').loop = true;
 
 // temporarily bump the whole screen to one side
 function screen_shake() {
